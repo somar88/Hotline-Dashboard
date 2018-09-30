@@ -8,7 +8,7 @@ public class Income {
 	public String check_in;
 	public LocalDateTime timing = LocalDateTime.now();
 	
-	public Income(double amount) {
+	public Income(double amount)  {
 		this.amount = amount;
 		
 	}
