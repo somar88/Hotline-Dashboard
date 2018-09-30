@@ -5,16 +5,11 @@ import java.time.LocalDateTime;
 public class Income {
 
 	public double amount = 0.0;
-	public String check_in;
-	public LocalDateTime timing = LocalDateTime.now();
-	
-	public Income(double amount)  {
+	public LocalDateTime timing;
+
+	public Income(double amount) {
 		this.amount = amount;
-		
-	}
-
-	public void calculate() {
-
+		this.timing = LocalDateTime.now();
 	}
 
 	public double calc_MonthlyAccount(double amount) {

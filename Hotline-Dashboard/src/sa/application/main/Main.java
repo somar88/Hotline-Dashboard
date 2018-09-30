@@ -1,21 +1,23 @@
 package sa.application.main;
 
+import java.awt.Dimension;
 import java.util.Scanner;
 
-import sa.application.finance.Income;
+import javax.swing.JFrame;
 
 public class Main {
 
 	static Scanner scan = new Scanner(System.in);
-	public static Income inc;
 
 	public static void main(String[] args) {
 
-		System.out.println("Please enter your income this month: ");
-		inc = new Income(scan.nextDouble());
-		System.out.println("Income: " + inc.amount);
-		System.out.println("Monthly Account: " + inc.calc_MonthlyAccount(inc.amount));
-		System.out.println("");
+		JFrame frm = new JFrame("Welcome");
+		frm.setSize(new Dimension(600, 400));
+		frm.setLocationRelativeTo(null);
+		frm.setResizable(false);
+		frm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frm.setVisible(true);	
+
 	}
 
 }
