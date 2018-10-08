@@ -1,5 +1,8 @@
 package sa.application.main;
+
 import javafx.application.Application;
+import javafx.event.EventHandler;
+import javafx.event.ActionEvent;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -31,6 +34,9 @@ public class Main extends Application {
 		btn_create.setMinSize(50, 25);
 		Button btn_exit = new Button("Exit");
 		btn_exit.setMinSize(50, 25);
+		btn_exit.setOnAction(e -> {
+			System.exit(1);
+		});
 
 		GridPane GP = new GridPane();
 		GP.setMinSize(250, 110);
